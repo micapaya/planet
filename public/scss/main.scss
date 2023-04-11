@@ -1,0 +1,17 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #343434;
+$font-color: #d7d7d7;
+
+@import "index.scss";
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+body {
+  background: $primary-color;
+  position: relative;
+}
+
+

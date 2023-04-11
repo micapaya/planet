@@ -1,0 +1,97 @@
+header {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #d7d7d7;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+nav {
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.items {
+  color: #d7d7d7;
+  font-size: 0.9rem;
+  margin: auto;
+  list-style: none;
+  height: 100%;
+  padding: 2%;
+}
+
+.containerPlanet {
+  transform: scale(0.4) translateX(40%) translateY(31rem);
+}
+
+.cardPlanet {
+  position: absolute;
+  transform-origin: 0% 0%;
+  border-radius: 100%;
+  border: 0.33px solid gray;
+}
+@keyframes orbit {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+.cardPlanet h3 {
+  color: black;
+  padding: 0.3rem;
+  font-size: 0.6rem;
+  position: absolute;
+  top: -70px;
+  left: 0px;
+  transition: 2s;
+  z-index: 99;
+}
+.cardPlanet .planets {
+  margin: auto;
+  border: 1px solid white;
+  background: radial-gradient(circle, rgb(189, 200, 255) 0%, rgba(87, 154, 212, 0) 51%, rgba(125, 86, 203, 0) 62%, rgba(252, 70, 107, 0) 62.1%);
+  right: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+aside {
+  float: right;
+  padding: 2rem;
+}
+aside li {
+  list-style: none;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  color: #d7d7d7;
+  font-size: 0.6rem;
+  display: block;
+  cursor: pointer;
+  transition: 0.5s;
+}
+aside li:hover {
+  color: aqua;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background: #343434;
+  position: relative;
+}
+
+/*# sourceMappingURL=main.css.map */
